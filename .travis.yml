@@ -1,0 +1,15 @@
+language: node_js
+
+cache:
+  npm: false
+  directories:
+    - ./.yarn/cache
+
+before_install:
+  - npm install -g yarn
+
+install:
+  - yarn install
+
+script:
+  - yarn check
